@@ -1,0 +1,126 @@
+$accent: #42D5E9
+$black: #131313
+
+body
+    padding: 0
+    margin: 0
+    background-color: #F1F6F9
+    font-family: 'Gilroy'
+
+.container
+    width: 1110px
+    margin: 0 auto
+
+.header
+    background-color: #fff
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+.menu
+    display: flex
+    list-style: none
+    padding: 0
+    margin: 0
+    &__list
+        margin-right: 48px
+        &:last-of-type
+            margin-right: 0
+    &__link
+        text-decoration: none
+        color: $black
+        font-size: 16px
+        font-weight: 500
+        margin: 0
+
+.logo
+    margin: 18px 0
+
+.banner
+    margin-top: 24px
+    &__content
+        max-width: 1110px
+        height: 450px
+        background: #fff url('../img/Rectangle 2.png') no-repeat
+        object-fit: cover
+        border-radius: 12px
+
+    &__btns
+        margin: 0 24px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 450px
+    &__button
+        border: none
+        width: 40px
+        height: 40px
+        background-color: #FFFFFF80
+        border-radius: 50px
+        &:last-of-type
+            transform: rotate(180deg)
+
+.calendar
+    margin-top: 64px
+    &__head
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 40px
+        &__title
+            display: flex
+            align-items: center
+            &__text
+                font-size: 40px
+                font-weight: 700
+                color: $black
+                margin-left: 16px
+                margin-top: 0
+                margin-bottom: 0
+        &__btn
+            text-decoration: none
+            font-family: 'Gilroy'
+            font-size: 14px
+            font-weight: 600
+            padding: 8px 14px
+            color: #fff
+            background-color: $accent
+            border-radius: 50px
+            box-shadow: 1px 2px 14px 0px #42D5E980
+    &__items
+        display: flex
+        flex-wrap: wrap
+    &__card
+        background-color: #fff
+        width: 255px
+        height: 140px
+        box-shadow: 4px 4px 24px 0px #00000014
+        border-radius: 12px
+        margin: 0 30px 30px 0
+        &:nth-of-type(4n)
+            margin-right: 0
+        &__time
+            width: 207px
+            font-size: 12px
+            color: $black
+            font-weight: 400
+            opacity: 50%
+            margin: 24px 24px 10px 24px
+        &__title
+            font-size: 18px
+            font-weight: 600
+            color: $black
+            width: 207px
+            margin: 0 24px
+            line-height: 110%
+        &__teacher
+            font-size: 12px
+            color: $black
+            font-weight: 400
+            margin: 16px 24px 24px 24px
+
+.mobile-menu
+    border: none
+    background: none
+    display: none
